@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -march=native -Wall -Wextra -pthread CMakeFiles/exchange_sim.dir/src/server/main.cpp.o -o bin/exchange_sim  libexchange_server.a -lrt 

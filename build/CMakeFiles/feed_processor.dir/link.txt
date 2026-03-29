@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -march=native -Wall -Wextra -pthread CMakeFiles/feed_processor.dir/src/client/main_client.cpp.o -o feed_processor  libfeed_handler_lib.a -lrt 

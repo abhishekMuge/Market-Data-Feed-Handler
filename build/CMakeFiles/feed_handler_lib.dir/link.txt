@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfeed_handler_lib.a CMakeFiles/feed_handler_lib.dir/src/client/market_data_socket.cpp.o CMakeFiles/feed_handler_lib.dir/src/client/binary_parser.cpp.o CMakeFiles/feed_handler_lib.dir/src/client/symbol_cache.cpp.o CMakeFiles/feed_handler_lib.dir/includes/common/latency_tracker.cpp.o
+/usr/bin/ranlib libfeed_handler_lib.a

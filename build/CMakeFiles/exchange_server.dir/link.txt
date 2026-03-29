@@ -1,0 +1,2 @@
+/usr/bin/ar qc libexchange_server.a CMakeFiles/exchange_server.dir/src/server/tick_generator.cpp.o CMakeFiles/exchange_server.dir/src/server/client_manager.cpp.o CMakeFiles/exchange_server.dir/src/server/exchange_simulator.cpp.o
+/usr/bin/ranlib libexchange_server.a
