@@ -137,23 +137,23 @@ int main() {
                       << "--------------------------" << std::endl;
         }
 
-        // // Get stats from the tracker
-        // auto stats = processor.get_tracker().get_stats();
-        // if (stats.sample_count > 0) {
-        //     std::cout << "--- Performance Metrics ---" << "\n"
-        //               << "Samples: " << stats.sample_count << "\n"
-        //               << "Mean:    " << stats.mean << " ns\n"
-        //               << "P99:     " << stats.p99 << " ns\n"
-        //               << "P99.9:   " << stats.p999 << " ns\n"
-        //               << "--------------------------" << std::endl;
-        // }
+        // Get stats from the tracker
+        auto stats = processor.get_tracker().get_stats();
+        if (stats.sample_count > 0) {
+            std::cout << "--- Performance Metrics ---" << "\n"
+                      << "Samples: " << stats.sample_count << "\n"
+                      << "Mean:    " << stats.mean << " ns\n"
+                      << "P99:     " << stats.p99 << " ns\n"
+                      << "P99.9:   " << stats.p999 << " ns\n"
+                      << "--------------------------" << std::endl;
+        }
 
-        // // if (i > 0 && i % 10 == 0) 
-        // {
-        //     processor.get_tracker().export_to_csv("latency_report.csv");
-        // }
+        // if (i > 0 && i % 10 == 0) 
+        {
+            processor.get_tracker().export_to_csv("latency_report.csv");
+        }
     }
-    // processor.get_tracker().export_to_csv("latency_report.csv");
+    processor.get_tracker().export_to_csv("latency_report.csv");
     // processor->get_tracker->export_to_csv("latency_report.csv");
     if (feed_thread.joinable()) feed_thread.join();
     return 0;
